@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Career Point University</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/modern-business.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Placement Cell | CP University</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="index.html">About</a>
+                    </li>
+                   <!-- <li>
+                        <a href="policy.html">Placement Policy</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>-->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Student <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="registration.html">Register</a>
+                            </li>
+                            <li>
+                                <a href="student_login.php">Login</a>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Company <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="company_registration.html">Register</a>
+                            </li>
+                            
+                        </ul>
+                        </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Marketing Icons Section -->
+        <div class="row">
+        	<div class="col-md-2">
+            </div>
+            <div class="col-lg-8">
+                <h1 class="page-header">
+                   Company Registration Form
+                </h1>
+                <!--<class =  <p><ul>
+                <li>Class A: CGPA >=8 , 10th percentage >= 60 , 10th percentage >= 60</li>
+                  <li>Class B: 7< CGPA<8 , 10th percentage <= 60 , 10th percentage >= 60</li>
+                    <li>Class A: CGPA<7 , 10th percentage <= 60 , 10th percentage <= 60</li>
+                </ul>-->
+                </p>
+                <form role="form" action="company_registration.php" method="post">
+                	<div class="form-group">
+                 		 <label for="name"> Company Name:</label>
+                    	 <input type="text" class="form-control" id="name" name="company_name" >
+                    	</div>
+                    <div class="form-group">
+                    	 <label for="url">Url:</label>
+                   		 <input type="text" class="form-control" id="url" name="url">
+                         </div>
+                    <div class="form-group">
+                     	 <label for="companytype">Type of Company:</label>
+                         <input type="text" class="form-control" id="companytype" name="companytype">
+                         </div>
+                    <div class="form-group">
+                     	 <label for="eligible_for" >Eligible Students:</label>
+                         <label class="checkbox-inline">
+                              <input type="checkbox" id="inlineCheckbox1" value="For All" name="eligible" > For All
+                            </label>
+                            <label class="checkbox-inline">
+                              <input type="checkbox" id="inlineCheckbox2" value="B.Tech" name="eligible"> B.Tech
+                            </label>
+                            <label class="checkbox-inline">
+                              <input type="checkbox" id="inlineCheckbox3" value="M.Tech" name="eligible"> M.Tech
+                            </label>
+                            <label class="checkbox-inline">
+                              <input type="checkbox" id="inlineCheckbox4" value="M.Tech" name="eligible"> BBA
+                            </label>
+                            <label class="checkbox-inline">
+                              <input type="checkbox" id="inlineCheckbox5" value="MBA" name="eligible"> MBA
+                            </label>
+                            <label class="checkbox-inline">
+                              <input type="checkbox" id="inlineCheckbox6" value="MCA" name="eligible"> MCA
+                            </label>
+                    </div>
+                    
+                    <div class="form-group">
+                    	<label for="min_cgpa">Required Cgpa:</label>
+                   		 <input type="number" class="form-control" id="min_cgpa" name="min_cgpa" >
+                    	</div>
+                    <div class="form-group">
+                    	<label for="min_10_per">Required 10th Percentage</label>
+                        <input type="number" class="form-control" id="min_10_per" name="min_10_per">
+                        </div>
+                    <div class="form-group">
+                    	<label for="min_12_per">Required 12th Percentage</label>
+                        <input type="number" class="form-control" id="min_12_per" name="min_12_per">
+                        </div>
+                        <div class="form-group">
+                        <label for="class">Class:</label>
+                            	<label class="radio-inline">
+                              	<input type="radio" id="inlineCheckbox1" value="A" name="class">A
+                        </label>
+                       	<label class="checkbox-inline">
+                              	<input type="radio" id="inlineCheckbox2" value="B" name="class"> B
+                        </label>
+                        <label class="checkbox-inline">
+                              	<input type="radio" id="inlineCheckbox3" value="C" name="class"> C   
+                        </label>
+                            
+                    </div>
+                    <div class="form-group">
+                    	<label for="email">Email address:</label>
+                    	<input type="email" class="form-control" id="email" name="email">
+                 	</div>
+                    <div class="form-group">
+                   	 	<label for="info">Extra Info:</label>
+                    	<input type="text" class="form-control" id="info" name="info">
+                    	</div>
+                 	<div class="checkbox">
+                    	<label><input type="checkbox"> Remember me</label>
+                 		</div>
+                  	<button type="submit" class="btn btn-default">Submit</button>
+               	 	</form>
+            </div>
+           	<div class="col-md-2">
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Placement Cell 2016</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

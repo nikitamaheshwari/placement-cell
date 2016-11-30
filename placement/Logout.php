@@ -1,0 +1,16 @@
+<?php 
+	session_start();
+	if(!isset($_SESSION["role"]))
+	{
+		header("Location:Login.php");
+		die();
+	}
+	if(isset($_SESSION["college_id"]))
+		unset($_SESSION["college_id"]);
+	unset($_SESSION["role"]);
+	if(isset($_SESSION["username"]))
+		unset($_SESSION["name"]);
+	session_destroy();
+	header("Location:index.html");
+	die();
+?>
